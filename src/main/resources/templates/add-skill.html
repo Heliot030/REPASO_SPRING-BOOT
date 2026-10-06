@@ -2,10 +2,15 @@
 <html lang="en" xmlns:th ="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>CV</title>
+    <title>docuemento</title>
 </head>
 <body>
 <h1> Agregar Nueva Habilididad </h1>
-
+<!--@{skils/add} esta aqui el que tiene el atribute quie recibe la info-->
+<form th:action="@{/skills/add} " th:object="${skill}" method="post" >
+        <label th:for="nombre">Nombre</label>
+        <input type="text" th:field="*{name}">
+        <button type="submit" > Guardar </button>
+</form>
 </body>
 </html>
