@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th ="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>CV</title>
+</head>
+<body>
+<h1> CV</h1>
+    <p th:text="'Hola ' + ${name}  " ></p>
+    <p th:if="${name.length < 3} " style=" color: darkred"> No hay datos</p>
+
+<!--    <p th:text="${persona.firtName}"></p>-->
+<!--    <p th:text="${persona.lastName}"></p>-->
+<!--    <p th:text="${persona.profession}"></p>-->
+
+</body>
+</html>
